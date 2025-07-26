@@ -12,7 +12,6 @@ import { Menu, X } from 'lucide-react'
 type NavLink = {
   name: string
   path: string
-  id: number
 }
 
 const Navbar = () => {
@@ -32,32 +31,30 @@ const Navbar = () => {
     <>
       <nav
         className={cn(
-          'w-full fixed px-5 md:px-8 py-4 flex items-center justify-between  top-0  z-50 transition-colors duration-300',
+          'w-full fixed px-6 md:px-10 py-4 flex items-center justify-between  top-0  z-50 transition-colors duration-300 ',
           scrolled
             ? 'bg-background/70 backdrop-blur-md shadow-md border-b border-border'
             : 'bg-transparent'
         )}
       >
-        <Link href='#top' className='flex items-center'>
-          <Image
+        <Link href='#top' className='flex items-center pt-3'>
+          {/* <Image
             src='/profile1.png'
             alt=''
             priority
             width={60}
             height={60}
             className=' rounded-full'
-          />
-          <p className='hidden md:block font-cursive font-bold pl-1 text-[1.3rem]'>
-            Godric Marto
-          </p>
+          /> */}
+          <p className=' font-cursive font-bold text-3xl'>Godric Ikeji</p>
         </Link>
 
         {/* nav links */}
         <ul className='hidden md:flex items-center px-12 py-3 gap-6 lg:gap-8 font-ovo'>
           {navLinks.map((link) => {
-            const { name, path, id } = link
+            const { name, path } = link
             return (
-              <li key={id}>
+              <li key={name}>
                 <Button variant='link'>
                   <Link href={path}>{name}</Link>
                 </Button>
@@ -103,9 +100,9 @@ const Navbar = () => {
           {/*  */}
 
           {navLinks.map((link) => {
-            const { name, path, id } = link
+            const { name, path } = link
             return (
-              <li key={id}>
+              <li key={name}>
                 <Button variant='link'>
                   <Link className='text-white dark:text-black' href={path}>
                     {name}
