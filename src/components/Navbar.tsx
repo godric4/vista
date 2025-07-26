@@ -83,7 +83,7 @@ const Navbar = () => {
         </div>
         {/* mobile menu */}
         <ul
-          className={`md:hidden flex flex-col gap-4 py-20 px-6 fixed -right-0 top-0 bottom-0 h-screen bg-black text-white dark:bg-white dark:text-black  transition-transform  duration-400 ease-in-out z-40 ${
+          className={`md:hidden flex items-center w-[50%] flex-col gap-4 py-20 px-6 fixed -right-0 top-0 bottom-0 h-screen bg-black text-white text-2xl dark:bg-white dark:text-black  transition-transform  duration-400 ease-in-out z-40 ${
             isOpen ? 'translate-x-0' : 'translate-x-full'
           }`}
         >

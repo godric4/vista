@@ -5,8 +5,8 @@ import Image from 'next/image'
 
 const Hero = () => {
   return (
-    <section className='h-screen pt-20 w-full flex items-center justify-center px-4 sm:px-1 md:px- lg:px-  overflow-hidden'>
-      <div className='flex flex-col-reverse md:flex-row items-center justify-center[calc(100vh-5rem)] h- gap-12  w- '>
+    <section className='h-screen  w-full flex items-center justify-center px-4 sm:px-1 md:px- lg:px-  overflow-hidden'>
+      <div className='flex flex-col-reverse md:flex-row items-center justify-center  gap-12  w- '>
         {/* Text Content */}
         <div className='text-center md:text-left max-w-xl'>
           <h1 className='text-4xl sm:text-6xl lg:text-[66px] font-bold mb-4'>
