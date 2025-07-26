@@ -38,15 +38,9 @@ const Navbar = () => {
         )}
       >
         <Link href='#top' className='flex items-center pt-3'>
-          {/* <Image
-            src='/profile1.png'
-            alt=''
-            priority
-            width={60}
-            height={60}
-            className=' rounded-full'
-          /> */}
-          <p className=' font-cursive font-bold text-3xl'>Godric Ikeji</p>
+          <p className=' font-cursive font-bold text-3xl sm:text-2xl'>
+            Godric Ikeji
+          </p>
         </Link>
 
         {/* nav links */}

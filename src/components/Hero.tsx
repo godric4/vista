@@ -24,25 +24,25 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div className='flex justify-center md:justify-start gap-4'>
-            <Button
-              variant='default'
-              className=' px-6 py-2 rounded-xl  transition'
-            >
+            <Button variant='default' className='   transition'>
               View Projects
             </Button>
-            <Button variant='outline' className='border  bg-graytransition'>
-              Resume
+            <Button
+              variant='outline'
+              className='border  bg-gray-300 transition'
+            >
+              Download Resume
             </Button>
           </div>
         </div>
 
         <div className=''>
           <Image
-            src='/profile2.png'
+            src='/profile-pic.png'
             alt='Godric Ikeji'
             width={100}
             height={100}
-            className='w-80 h-80 object-cover rounded-full'
+            className='w-40 sm:w-60 md:w-72 lg:w-80 h-auto object-cover rounded-full'
             priority
           />
         </div>

@@ -8,7 +8,7 @@ export const navLinks = [
     path: '/portfolio',
   },
   {
-    name: 'About Me',
+    name: 'About',
     path: '/about',
   },
 
