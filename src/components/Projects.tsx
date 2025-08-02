@@ -31,8 +31,7 @@ const Projects = () => {
     flex flex-col md:flex-row justify-between 
     my-4 py-4 px-4
     h-[420px] md:h-[300px] 
-    gap-4 hover:scale-95 active:scale-90 transition transform
-     duration-300 ease-in-out 
+    gap-4  
     ${index % 2 === 1 ? 'md:flex-row-reverse' : ''}
   `}
             >
