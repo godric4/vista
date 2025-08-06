@@ -1,0 +1,71 @@
+<div className='flex flex-col  font-bold  jus gap-8 py-3 px-5 rounded  h-100'>
+          <div className='flex md:flex-wrap gap-4 mb-4 '>
+            {tabs.map((tab) => {
+              const Icon = tab.icon
+              return (
+                <button
+                  key={tab.id}
+                  onClick={() => setActiveTab(tab.id as TabId)}
+                  className={`flex  items-center gap-2 px-2 py-2 text-sm w-full rounded border transition ${
+                    activeTab === tab.id
+                      ? 'bg-secondary text-white border-shade'
+                      : 'bg-shade text-white border-accent'
+                  }`}
+                >
+                  <Icon size={16} />
+                  {tab.label}
+                </button>
+              )
+            })}
+          </div>
+        </div>
+        <div className='h-100 overflow-y-auto border rounded p-4 text-se space-y-4 w-full'>
+          {activeTab === 'about' && <p>{content.about}</p>}
+
+          {activeTab === 'experience' &&
+            content.experience.map((exp, idx) => (
+              <div key={idx}>
+                <h4 className='font-bold'>
+                  {exp.title} – {exp.company}
+                </h4>
+                <p className='text-xs italic'>{exp.period}</p>
+                <p>{exp.description}</p>
+                <ul className='list-disc list-inside text-xs text-secondary'>
+                  {exp.achievements.map((item, i) => (
+                    <li key={i}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+
+          {activeTab === 'education' && <p>{content.education}</p>}
+
+          {activeTab === 'skills' &&
+            content.skills.map((skill, idx) => (
+              <div key={idx}>
+                <p className='mb-1'>{skill.name}</p>
+                <div className='w-full h-2 rounded bg-gray-200 overflow-hidden'>
+                  <div
+                    className={`h-full bg-gradient-to-r ${skill.color}`}
+                    style={{ width: `${skill.level}%` }}
+                  />
+                </div>
+              </div>
+            ))}
+
+          {activeTab === 'achievements' &&
+            content.achievements.map((ach, idx) => (
+              <div key={idx} className='flex items-center justify-between'>
+                <span>{ach.title}</span>
+                <span className='text-xs text-gray-500'>{ach.year}</span>
+              </div>
+            ))}
+
+          {activeTab === 'interests' &&
+            content.interests.map((interest, idx) => (
+              <div key={idx}>
+                <p className='font-medium'>{interest.name}</p>
+                <p className='text-xs text-secondary'>{interest.description}</p>
+              </div>
+            ))}
+        </div>
