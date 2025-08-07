@@ -35,29 +35,38 @@ export const navLinks = [
 
 export const projects = [
   {
-    title: 'E-Commerce',
-    description: 'A responsive online store built with modern tools.',
-    imageURL: '/phase.jpeg',
-    tools: ['Next.js', 'TypeScript', 'Tailwind'],
-    githubURL: 'https://github.com/your-repo',
-    demoURL: 'https://your-live-demo.com',
-  },
-  {
-    title: 'Portfolio',
-    description: 'Showcase your work beautifully.',
+    id: 1,
+    title: 'School Management System',
+    desc: 'Fullstack project with roles, results, and invoices.',
+    githubURL: 'github.com',
+    demoURL: 'github.com',
     imageURL: '/rcl.png',
-    tools: ['React', 'Framer Motion', 'Tailwind'],
-    githubURL: 'https://github.com/your-portfolio',
-    demoURL: 'https://portfolio-demo.com',
+    span: 'md:col-span-4',
   },
-
   {
-    title: 'E-Gaming',
-    description: 'A responsive online store built with modern tools.',
-    imageURL: '/avail.png',
-    tools: ['Next.js', 'TypeScript', 'Tailwind'],
-    githubURL: 'https://github.com/your-repo',
-    demoURL: 'https://your-live-demo.com',
+    id: 2,
+    title: 'React Blog',
+    desc: 'Markdown blog with dynamic routing.',
+    image: '/phase.jpeg',
+    span: 'md:col-span-2',
+  },
+  {
+    id: 3,
+    title: 'Crypto Tracker',
+    desc: 'Real-time price tracking app using MEXC API.',
+    githubURL: 'github.com',
+    demoURL: 'github.com',
+    imageURL: 'bg1.jpg',
+    span: 'md:col-span-2 md:row-span-2',
+  },
+  {
+    id: 4,
+    title: 'Portfolio Website',
+    desc: 'Modern dark-mode developer portfolio with animation.',
+    githubURL: 'github.com',
+    demoURL: 'github.com',
+    imageURL: 'bg2.jpg',
+    span: 'md:col-span-4',
   },
 ]
 
@@ -72,7 +81,9 @@ type TabId = keyof typeof content
 export const content = {
   about:
     'Hi, I’m a passionate full-stack developer with strong skills in modern frontend frameworks and backend APIs. I enjoy building clean and scalable systems..',
-  imageUrl: '/pic.png',
+  githubURL: 'github.com',
+  demoURL: 'github.com',
+  imageURL: '/pic.png',
   skills: [
     {
       name: 'JavaScript/TypeScript',
@@ -84,6 +95,7 @@ export const content = {
   ],
   experience: [
     {
+      id: 1,
       title: 'Senior Frontend Developer',
       company: 'TechCorp Inc.',
       period: '2022 - Present',

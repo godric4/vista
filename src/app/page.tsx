@@ -10,7 +10,9 @@ const Page = () => {
       <div className='container'>
         <Hero />
         <About />
-        <Projects />
+        <div className='mt-4 mb-4 px-4 py-4 max-w-5xl mx-auto'>
+          <Projects />
+        </div>
       </div>
     </main>
   )

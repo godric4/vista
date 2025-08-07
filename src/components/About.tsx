@@ -10,12 +10,12 @@ const About = () => {
   const [activeTab, setActiveTab] = useState<TabId>('about')
 
   return (
-    <div className='mt-4 px-4 max-w-5xl mx-auto'>
+    <div className='mt-4 mb-4 px-4 py-4 max-w-5xl mx-auto'>
       {' '}
       <h1 className='font-bold text-[1.6rem] justify-center flex items-center gap-2 text-shade mb-4'>
         <User className='w-7 h-7' /> Get To Know Me
       </h1>
-      <p className=' text-[1.1rem] ml-6 mb-6'>
+      <p className=' text-[1.1rem] ml-6 mb-6 text-secondary'>
         Handpicked projects that showcase my approach to design, performance,
         and user-focused development.
       </p>
@@ -28,7 +28,7 @@ const About = () => {
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id as TabId)}
-                className={`flex items-center gap-2 px-3 py-2 text-sm rounded border transition ${
+                className={`flex items-center gap-2 px-3 py-2 text-sm rounded border border-shade transition ${
                   activeTab === tab.id
                     ? 'bg-gold text-white border-gold'
                     : 'bg-gray-100 text-gray-700 border-gray-300'
@@ -47,7 +47,7 @@ const About = () => {
           {activeTab === 'about' && (
             <div className=' p-2  flex flex-col md:flex-row items-center justify-between gap-3 '>
               <Image
-                src={content.imageUrl}
+                src={content.imageURL}
                 alt='me'
                 width={100}
                 height={100}
