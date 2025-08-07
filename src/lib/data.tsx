@@ -1,17 +1,4 @@
-import {
-  User,
-  Briefcase,
-  GraduationCap,
-  Code,
-  Award,
-  Heart,
-  Coffee,
-  Music,
-  Camera,
-  Gamepad2,
-  Book,
-  Plane,
-} from 'lucide-react'
+import { User, Briefcase, GraduationCap, Code } from 'lucide-react'
 
 export const navLinks = [
   {
