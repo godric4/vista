@@ -55,7 +55,7 @@ const Navbar = () => {
           <div className='hidden lg:block'></div>
 
           <Button className='hidden md:flex' variant='secondary'>
-            <Link href='/contact'>Let's Connect</Link>
+            <Link href='/contact'>Let&#39;s Connect</Link>
           </Button>
           {/* Hamburger button */}
           {!isOpen && (
@@ -99,7 +99,7 @@ const Navbar = () => {
 
           <div className='flex flex-col gap-2 items-center'>
             <div className=' md:flex'>
-              <Link href='/contact'>Let's Talk</Link>
+              <Link href='/contact'>Let&#39;s Talk</Link>
             </div>
             <div className=' lg:block'>
               {isOpen && (

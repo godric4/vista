@@ -41,10 +41,13 @@ const Projects = () => {
                 ease: 'easeOut',
               }}
             >
-              <img
+              <Image
                 src={imageURL}
                 alt={title}
+                width={100}
+                height={100}
                 className='w-full h-48 object-cover'
+                unoptimized
               />
               <div className='p-4 text-white'>
                 <h3 className='text-lg font-semibold'>{title}</h3>
