@@ -51,23 +51,29 @@ const Projects = () => {
                 <p className='text-sm mt-1 text-secondary'>{desc}</p>
 
                 <div className='mt-4 flex gap-3'>
-                  <a
+                  <Link
                     href={githubURL}
                     target='_blank'
                     rel='noopener noreferrer'
-                    className='px-3 py-1 rounded bg-gray-700 hover:bg-gray-600 transition'
+                    className='px-3 py-2 rounded bg-shade hover:bg-shade/60 transition flex font-semibold text-sm'
                   >
+                    <span className='mr-1 '>
+                      <GithubIcon />
+                    </span>{' '}
                     Code
-                  </a>
+                  </Link>
                   {/* <Link href={demoURL}></Link> */}
-                  <a
+                  <Link
                     href={demoURL}
                     target='_blank'
                     rel='noopener noreferrer'
-                    className='px-3 py-1 rounded bg-yellow-600 hover:bg-yellow-500 transition text-black font-semibold'
+                    className='px-3 py-2 rounded bg-secondary hover:bg-secondary/50 transition text-black flex font-semibold text-sm'
                   >
+                    <span className='mr-1'>
+                      <ViewIcon />
+                    </span>{' '}
                     Demo
-                  </a>
+                  </Link>
                 </div>
               </div>
             </motion.div>

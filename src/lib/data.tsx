@@ -36,27 +36,32 @@ export const navLinks = [
 export const projects = [
   {
     id: 1,
-    title: 'School Management System',
-    desc: 'Fullstack project with roles, results, and invoices.',
+    title: 'E-commerce Platform',
+    desc: '. It allows customers to browse and search for products, view product details, add items to their shopping cart, and proceed to checkout. The project includes interactive features such as user authentication, product filtering, and sorting. It employs responsive design to ensure compatibility across various devices. The application integrates with a backend server to fetch product data and process orders securely. The intuitive user interface, along with smooth navigation and quick loading times and enhances user experience and satisfaction.',
     githubURL: 'github.com',
-    demoURL: 'github.com',
-    imageURL: '/rcl.png',
+    demoURL: 'https://lorinecakes.netlify.app',
+    imageURL:
+      'https://res.cloudinary.com/gentlegiant/image/upload/v1681177403/Screenshot_from_2023-04-11_02-35-28_jrtduw.png',
     span: 'md:col-span-4',
   },
   {
     id: 2,
-    title: 'React Blog',
-    desc: 'Markdown blog with dynamic routing.',
-    image: '/phase.jpeg',
-    span: 'md:col-span-2',
+    title: 'Bar & Lounge Website',
+    desc: 'A sleek and modern bar & lounge website designed for an immersive customer experience. Built with a responsive UI, smooth navigation, and engaging visuals to showcase the ambience, menu, and events effortlessly',
+    githubURL: 'github.com',
+    demoURL: 'https://godrichelounge.netlify.app/',
+    imageURL:
+      'https://res.cloudinary.com/gentlegiant/image/upload/v1740245537/barlounge_pv64wb.png',
+    span: 'md:col-span-2 ',
   },
   {
     id: 3,
     title: 'Crypto Tracker',
     desc: 'Real-time price tracking app using MEXC API.',
     githubURL: 'github.com',
-    demoURL: 'github.com',
-    imageURL: 'bg1.jpg',
+    demoURL: 'https://empire19.netlify.app',
+    imageURL:
+      'https://res.cloudinary.com/gentlegiant/image/upload/v1691251706/myreads_g5jcjm.png',
     span: 'md:col-span-2 md:row-span-2',
   },
   {
@@ -65,7 +70,8 @@ export const projects = [
     desc: 'Modern dark-mode developer portfolio with animation.',
     githubURL: 'github.com',
     demoURL: 'github.com',
-    imageURL: 'bg2.jpg',
+    imageURL:
+      'https://res.cloudinary.com/gentlegiant/image/upload/v1740247577/Screenshot_from_2025-02-22_18-57-16_x4t1yr.png',
     span: 'md:col-span-4',
   },
 ]

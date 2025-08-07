@@ -55,7 +55,7 @@ const Navbar = () => {
           <div className='hidden lg:block'></div>
 
           <Button className='hidden md:flex' variant='secondary'>
-            <Link href='/contact'>Let&apos;s Talk</Link>
+            <Link href='/contact'>Let&apos;s Connect</Link>
           </Button>
           {/* Hamburger button */}
           {!isOpen && (
