@@ -24,7 +24,7 @@ export const projects = [
   {
     id: 1,
     title: 'E-commerce Platform',
-    desc: '. It allows customers to browse and search for products, view product details, add items to their shopping cart, and proceed to checkout. The project includes interactive features such as user authentication, product filtering, and sorting. It employs responsive design to ensure compatibility across various devices. The application integrates with a backend server to fetch product data and process orders securely. The intuitive user interface, along with smooth navigation and quick loading times and enhances user experience and satisfaction.',
+    desc: 'This fullstack allows customers to browse and search for products, view product details, add items to their shopping cart, and proceed to checkout. The project includes interactive features such as user authentication, product filtering, and sorting. It employs responsive design to ensure compatibility across various devices.',
     githubURL: 'github.com',
     demoURL: 'https://lorinecakes.netlify.app',
     imageURL:

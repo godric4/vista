@@ -99,7 +99,7 @@ const Navbar = () => {
 
           <div className='flex flex-col gap-2 items-center'>
             <div className=' md:flex'>
-              <Link href='/contact'>Let&#39;s Talk</Link>
+              <Link href='/contact'>Let&#39;s Connect</Link>
             </div>
             <div className=' lg:block'>
               {isOpen && (

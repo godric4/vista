@@ -10,7 +10,7 @@ const About = () => {
   const [activeTab, setActiveTab] = useState<TabId>('about')
 
   return (
-    <div className='mt-4 mb-4 px-4 py-4 max-w-5xl mx-auto'>
+    <div className='mt-4 px-6 mb-4 px-4 py-4 max-w-5xl mx-auto'>
       {' '}
       <h1 className='font-bold text-[1.6rem] justify-center flex items-center gap-2 text-shade mb-4'>
         <User className='w-7 h-7' /> Get To Know Me
