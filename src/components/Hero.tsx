@@ -64,7 +64,7 @@ const Hero = () => {
               whileTap={{ scale: 0.97 }}
               className='bg-slate text-white font-bold px-6 py-4 border-shade border-1 rounded-lg shadow-md hover:bg-black/60 transition duration-300'
             >
-              Let's Collaborate
+              Let&#39;s Collaborate
             </motion.button>
           </Link>
         </motion.div>
