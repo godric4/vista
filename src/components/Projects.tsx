@@ -7,7 +7,6 @@ import {
   GitBranchPlus,
   GithubIcon,
   LucideFolderOpen,
-  View,
   ViewIcon,
 } from 'lucide-react'
 import Image from 'next/image'

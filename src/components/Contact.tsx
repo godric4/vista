@@ -14,7 +14,7 @@ const Contact = () => {
     <section className='bg-[--color-primary] text-[--foreground] px-6 py-16'>
       <h2 className='text-3xl font-bold mb-2'>Send Me a Message</h2>
       <p className='mb-10 text-[--foreground]/80'>
-        I'll get back to you within 24 hours
+        I&#39;ll get back to you within 24 hours
       </p>
 
       {/* Contact Form */}
@@ -46,9 +46,8 @@ const Contact = () => {
         </button>
       </form>
 
-      {/* Flex container for Connect & Info */}
+      {/*  */}
       <div className='flex flex-col md:flex-row gap-6 max-w-4xl mx-auto'>
-        {/* Connect With Me */}
         <div className='flex-1  border border-white rounded-xl p-6'>
           <h3 className='text-xl font-semibold mb-4 flex'>
             <span className='mr-1'>
