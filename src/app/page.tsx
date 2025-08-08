@@ -9,7 +9,7 @@ const Page = () => {
   return (
     <main className=''>
       <Navbar />
-      <div className='container'>
+      <div className=''>
         <Hero />
         <About />
         <div className='mt-4 mb-4 px-6 py-4 max-w-5xl mx-auto'>

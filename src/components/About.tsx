@@ -10,7 +10,7 @@ const About = () => {
   const [activeTab, setActiveTab] = useState<TabId>('about')
 
   return (
-    <div className='mt-4 px-6 mb-4 px-4 py-4 max-w-5xl mx-auto'>
+    <div className='mt-4 px-6 mb-4  py-4 max-w-5xl mx-auto'>
       {' '}
       <h1 className='font-bold text-[1.6rem] justify-center flex items-center gap-2 text-shade mb-4'>
         <User className='w-7 h-7' /> Get To Know Me
@@ -107,8 +107,21 @@ const About = () => {
                 </ul>
               </div>
             ))}
-
-          {activeTab === 'education' && <p>{content.education}</p>}
+          {activeTab === 'education' &&
+            content.education.map((edu) => (
+              <div key={edu.id} className='mb-6'>
+                <h3 className='text-lg font-semibold'>{edu.institution}</h3>
+                <p className='italic'>
+                  {edu.degree} | {edu.period}
+                </p>
+                <p className='my-2'>{edu.description}</p>
+                <ul className='list-disc list-inside'>
+                  {edu.achievements.map((achievement, idx) => (
+                    <li key={idx}>{achievement}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
 
           {activeTab === 'skills' &&
             content.skills.map((skill, idx) => (

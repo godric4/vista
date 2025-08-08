@@ -54,9 +54,6 @@ const Navbar = () => {
         <div className='flex gap-2'>
           <div className='hidden lg:block'></div>
 
-          <Button className='hidden md:flex' variant='secondary'>
-            <Link href='/contact'>Let&#39;s Connect</Link>
-          </Button>
           {/* Hamburger button */}
           {!isOpen && (
             <Button
@@ -98,15 +95,8 @@ const Navbar = () => {
           })}
 
           <div className='flex flex-col gap-2 items-center'>
-            <div className=' md:flex'>
-              <Link href='/contact'>Let&#39;s Connect</Link>
-            </div>
             <div className=' lg:block'>
-              {isOpen && (
-                <div onClick={() => setIsOpen(false)}>
-                  {/* <ThemeToggle /> */}
-                </div>
-              )}
+              {isOpen && <div onClick={() => setIsOpen(false)}></div>}
             </div>
           </div>
         </ul>
