@@ -15,13 +15,13 @@ const Contact = () => {
     <section id='contact' className=' px-6 py-16'>
       <hr className='my-3 py-3 text-secondary' />
       <div className=''>
-        <h2 className='text-3xl text-shade font-bold mb-2 flex items-center justify-center'>
+        <h2 className='text-2xl text-shade font-bold mb-2 flex items-center justify-center'>
           {' '}
           <span className='mr-1'>
             {' '}
             <MessageCircleHeart className='w-7 h-7' />{' '}
           </span>
-          Send Me a Message
+          Message Me
         </h2>
         <p className='mb-10 text-secondary text-center'>
           I will get back to you within 24 hours
