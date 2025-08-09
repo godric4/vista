@@ -7,7 +7,7 @@ export const navLinks = [
   },
   {
     name: 'My Projects',
-    path: '/#portfolio',
+    path: '/#projects',
   },
   {
     name: 'About Me',

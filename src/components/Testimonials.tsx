@@ -69,14 +69,14 @@ const Testimonials = () => {
         <button
           onClick={prevSlide}
           aria-label='Previous testimonial'
-          className='absolute left-0 top-1/2 transform -translate-y-1/2 bg-primary/80 hover:bg-primary rounded-full p-2 text-white shadow-md'
+          className='absolute left-0 top-1/2 transform -translate-y-1/2 bg-primary/80 hover:bg-primary rounded-full mx-2  p-2 text-white shadow-md'
         >
           ‹
         </button>
         <button
           onClick={nextSlide}
           aria-label='Next testimonial'
-          className='absolute right-0 top-1/2 transform -translate-y-1/2 bg-primary/80 hover:bg-primary rounded-full p-2 text-white shadow-md'
+          className='absolute right-0 top-1/2 transform -translate-y-1/2 bg-primary/80 hover:bg-primary rounded-full mx-2  p-2 text-white shadow-md'
         >
           ›
         </button>
