@@ -7,17 +7,22 @@ import {
   Instagram,
   GlobeIcon,
   Lightbulb,
-  FormInputIcon,
+  MessageCircleHeart,
 } from 'lucide-react'
 
 const Contact = () => {
   return (
     <section id='contact' className=' px-6 py-16'>
       <hr className='my-3 py-3 text-secondary' />
-      <h1 className='font-bold text-[1.6rem] justify-center flex items-center gap-2 text-shade mb-4'>
-        <FormInputIcon className='w-7 h-7' /> Get To Know Me
-      </h1>
-      <h2 className='text-3xl text-shade font-bold mb-2'>Send Me a Message</h2>
+
+      <h2 className='text-3xl text-shade font-bold mb-2 flex items-center'>
+        {' '}
+        <span className='mr-1'>
+          {' '}
+          <MessageCircleHeart className='w-7 h-7' />{' '}
+        </span>
+        Send Me a Message
+      </h2>
       <p className='mb-10 text-secondary'>
         I will get back to you within 24 hours
       </p>
