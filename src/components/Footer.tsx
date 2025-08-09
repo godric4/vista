@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className='bg-sl text-gray-300 py-10'>
       <div className='max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center md:items-start gap-8'>
         <div className='flex flex-col space-y-2 max-w-sm text-center md:text-left'>
-          <h2 className='text-2xl font-bold text-shade flex items-center justify-start '>
+          <h2 className='text-2xl font-bold text-shade flex items-center justify-center md:justify-start'>
             <span className='mr-1'>
               <TerminalSquare />
             </span>
