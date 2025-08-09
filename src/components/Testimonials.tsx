@@ -10,22 +10,21 @@ const Testimonials = () => {
   const [current, setCurrent] = useState(0)
   const length = testimonials.length
 
-  const nextSlide = () => {
-    setCurrent((prev) => (prev === length - 1 ? 0 : prev + 1))
-  }
-
   const prevSlide = () => {
     setCurrent((prev) => (prev === 0 ? length - 1 : prev - 1))
   }
 
-  //
   useEffect(() => {
+    const nextSlide = () => {
+      setCurrent((prev) => (prev === length - 1 ? 0 : prev + 1))
+    }
+
     const interval = setInterval(() => {
       nextSlide()
-    }, 4000) //
+    }, 4000)
 
-    return () => clearInterval(interval) //
-  }, [])
+    return () => clearInterval(interval)
+  }, [length])
 
   return (
     <section className='max-w-4xl mx-auto px-6 py-12 text-center'>
@@ -57,7 +56,7 @@ const Testimonials = () => {
               loading='lazy'
             />
             <blockquote className='text-lg md:text-xl italic text-white max-w-xl'>
-              &#34;{testimonials[current].feedback}&#34;
+              {`"${testimonials[current].feedback}"`}
             </blockquote>
             <h3 className='text-2xl font-semibold text-white'>
               {testimonials[current].name}
@@ -77,7 +76,9 @@ const Testimonials = () => {
           ‹
         </button>
         <button
-          onClick={nextSlide}
+          onClick={() =>
+            setCurrent((prev) => (prev === length - 1 ? 0 : prev + 1))
+          }
           aria-label='Next testimonial'
           className='absolute right-0 top-1/2 transform -translate-y-1/2 bg-primary/80 hover:bg-primary rounded-full mx-2  p-2 text-white shadow-md'
         >
