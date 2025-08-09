@@ -5,7 +5,7 @@ const ParallaxSection = () => {
     <section
       className='relative h-[400px] md:h-[500px] w-full flex items-center justify-center text-white'
       style={{
-        backgroundImage: "url('/bg1.jpg')",
+        backgroundImage: "url('/desk.jpg')",
         backgroundAttachment: 'fixed',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
