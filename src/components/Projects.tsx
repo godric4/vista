@@ -20,7 +20,7 @@ type projects = {
 
 const Projects = () => {
   return (
-    <div>
+    <section>
       <div className='mt-8 py-8 max-w-5xl'>
         <div className='mb-4 pb-4 text-center'>
           <h1 className='font-bold text-[1.6rem] justify-center flex items-center gap-2 text-shade'>
@@ -107,7 +107,7 @@ const Projects = () => {
           </Link>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 
