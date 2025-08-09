@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { testimonials } from '@/lib/data'
 import { Megaphone } from 'lucide-react'
+import Image from 'next/image'
 
 const Testimonials = () => {
   const [current, setCurrent] = useState(0)
@@ -47,15 +48,17 @@ const Testimonials = () => {
             transition={{ duration: 0.5 }}
             className='bg-slate/80 rounded-xl p-8 shadow-lg flex flex-col items-center space-y-6'
           >
-            <img
+            <Image
+              width={100}
+              height={100}
               src={testimonials[current].photo}
               alt={testimonials[current].name}
               className='w-24 h-24 rounded-full object-cover border-4 border-primary shadow-md'
               loading='lazy'
             />
-            <p className='text-lg md:text-xl italic text-white max-w-xl'>
-              "{testimonials[current].feedback}"
-            </p>
+            <blockquote className='text-lg md:text-xl italic text-white max-w-xl'>
+              &#34;{testimonials[current].feedback}&#34;
+            </blockquote>
             <h3 className='text-2xl font-semibold text-white'>
               {testimonials[current].name}
             </h3>

@@ -307,7 +307,7 @@ export const testimonials = [
     id: 1,
     name: 'Wunmi. O',
     role: 'CEO, Cakes & Bakes',
-    photo: 'hs1.jpg',
+    photo: '/hs1.jpg',
     feedback:
       'Working with Godric was a game changer! His frontend skills elevated our website’s user experience to the next level.',
   },
@@ -315,7 +315,7 @@ export const testimonials = [
     id: 2,
     name: 'Catherine Mead',
     role: 'Founder, StartupX',
-    photo: 'hs2.jpg',
+    photo: '/hs2.jpg',
     feedback:
       'Professional, fast, and creative. Godric delivered a stunning and performant website ahead of schedule.',
   },
