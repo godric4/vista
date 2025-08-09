@@ -14,18 +14,19 @@ const Contact = () => {
   return (
     <section id='contact' className=' px-6 py-16'>
       <hr className='my-3 py-3 text-secondary' />
-
-      <h2 className='text-3xl text-shade font-bold mb-2 flex items-center'>
-        {' '}
-        <span className='mr-1'>
+      <div className=''>
+        <h2 className='text-3xl text-shade font-bold mb-2 flex items-center justify-center'>
           {' '}
-          <MessageCircleHeart className='w-7 h-7' />{' '}
-        </span>
-        Send Me a Message
-      </h2>
-      <p className='mb-10 text-secondary'>
-        I will get back to you within 24 hours
-      </p>
+          <span className='mr-1'>
+            {' '}
+            <MessageCircleHeart className='w-7 h-7' />{' '}
+          </span>
+          Send Me a Message
+        </h2>
+        <p className='mb-10 text-secondary text-center'>
+          I will get back to you within 24 hours
+        </p>
+      </div>
 
       {/* Contact Form */}
       <form className='grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mb-16'>
