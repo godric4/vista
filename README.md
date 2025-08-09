@@ -1,7 +1,7 @@
 # Developer Portfolio
 
 This repository contains developer portfolio showcasing dev projects, skills, and experience in web development.
-
+Check out the live demo [portfolio website](https://godricikeji.vercel.app/)
 ---
 
 ## About
