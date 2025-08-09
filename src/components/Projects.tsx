@@ -55,28 +55,31 @@ const Projects = () => {
                   className='w-full h-48 object-cover'
                   unoptimized
                 />
-                <div className='p-4 text-white'>
+
+                <div className='p-4 text-white flex flex-col grow justify-between '>
                   <h3 className='text-lg font-semibold'>{title}</h3>
-                  <p className='text-sm mt-1 text-secondary'>{desc}</p>
+                  <p className='text-sm mt-1 text-secondary flex-grow'>
+                    {desc}
+                  </p>
 
                   <div className='mt-4 flex gap-3'>
                     <Link
                       href={githubURL}
                       target='_blank'
                       rel='noopener noreferrer'
-                      className='px-3 py-2 rounded bg-shade hover:bg-shade/60 transition flex font-semibold text-sm'
+                      className='px-3 py-2 rounded bg-primary border-shade border-1 hover:bg-shade/60 transition flex font-semibold text-sm'
                     >
                       <span className='mr-1 '>
                         <GithubIcon />
                       </span>{' '}
                       Code
                     </Link>
-                    {/* <Link href={demoURL}></Link> */}
+
                     <Link
                       href={demoURL}
                       target='_blank'
                       rel='noopener noreferrer'
-                      className='px-3 py-2 rounded bg-secondary hover:bg-secondary/50 transition text-black flex font-semibold text-sm'
+                      className='px-3 py-2 rounded border-secondary border-1 bg-secondary/30 hover:bg-secondary/80 transition text-white flex font-semibold text-sm'
                     >
                       <span className='mr-1'>
                         <ViewIcon />
@@ -92,7 +95,7 @@ const Projects = () => {
         <div className='mt-6 text-center'>
           <Link
             href='/projects'
-            className=' px-6 py-2 bg-shade rounded-lg text-white font-semibold hover:bg-shade/80 transition flex items-center justify-center md:inline-block '
+            className=' px-6 py-2 border-shade border-1 rounded-lg text-white font-semibold hover:bg-shade/60 transition flex items-center justify-center md:inline-block '
           >
             <p className='flex '>
               {' '}

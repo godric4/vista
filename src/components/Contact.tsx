@@ -7,13 +7,18 @@ import {
   Instagram,
   GlobeIcon,
   Lightbulb,
+  FormInputIcon,
 } from 'lucide-react'
 
 const Contact = () => {
   return (
-    <section className='bg-[--color-primary] text-[--foreground] px-6 py-16'>
-      <h2 className='text-3xl font-bold mb-2'>Send Me a Message</h2>
-      <p className='mb-10 text-[--foreground]/80'>
+    <section id='contact' className=' px-6 py-16'>
+      <hr className='my-3 py-3 text-secondary' />
+      <h1 className='font-bold text-[1.6rem] justify-center flex items-center gap-2 text-shade mb-4'>
+        <FormInputIcon className='w-7 h-7' /> Get To Know Me
+      </h1>
+      <h2 className='text-3xl text-shade font-bold mb-2'>Send Me a Message</h2>
+      <p className='mb-10 text-secondary'>
         I will get back to you within 24 hours
       </p>
 
@@ -22,25 +27,25 @@ const Contact = () => {
         <input
           type='text'
           placeholder='Your full name'
-          className='bg-white/5 border border-[--color-slate] p-4 rounded-md focus:outline-none focus:ring-2 focus:ring-[--color-accent]'
+          className='bg-white/5 border border-white p-4 rounded-md focus:outline-none focus:ring-2 focus:ring-shade'
         />
         <input
           type='email'
           placeholder='your.email@example.com'
-          className='bg-white/5 border border-[--color-slate] p-4 rounded-md focus:outline-none focus:ring-2 focus:ring-[--color-accent]'
+          className='bg-white/5 border border-white p-4 rounded-md focus:outline-none focus:ring-2 focus:ring-shade'
         />
         <input
           type='text'
           placeholder="What's this about?"
-          className='bg-white/5 border border-[--color-slate] p-4 rounded-md focus:outline-none focus:ring-2 focus:ring-[--color-accent] md:col-span-2'
+          className='bg-white/5 border border-white p-4 rounded-md focus:outline-none focus:ring-2 focus:ring-shade md:col-span-2'
         />
         <textarea
           placeholder='Tell me about your project, ideas, or just say hello!'
-          className='bg-white/5 border border-[--color-slate] p-4 rounded-md focus:outline-none focus:ring-2 focus:ring-[--color-accent] md:col-span-2 h-40'
+          className='bg-white/5 border border-white p-4 rounded-md focus:outline-none focus:ring-2 focus:ring-shade md:col-span-2 h-40'
         />
         <button
           type='submit'
-          className='bg-[--color-accent] text-[--color-slate] font-semibold px-6 py-3 rounded-md hover:bg-[--color-highlight] w-fit md:col-span-2 transition'
+          className='bg-shade  font-semibold px-6 py-3 rounded-md hover:bg-shade/50 w-full md:w-fit md:col-span-2 transition'
         >
           Send Message
         </button>
@@ -55,7 +60,7 @@ const Contact = () => {
             </span>{' '}
             Connect With Me
           </h3>
-          <div className='grid grid-cols-2 gap-4'>
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
             {[
               { name: 'GitHub', icon: <Github size={20} />, url: '#' },
               { name: 'LinkedIn', icon: <Linkedin size={20} />, url: '#' },

@@ -7,24 +7,24 @@ export const navLinks = [
   },
   {
     name: 'My Projects',
-    path: '/portfolio',
+    path: '/#portfolio',
   },
   {
     name: 'About Me',
-    path: '/about',
+    path: '/#about',
   },
 
-  // {
-  //   name: 'Journal',
-  //   path: '/blog',
-  // },
+  {
+    name: 'Contact',
+    path: '/#contact',
+  },
 ]
 
 export const projects = [
   {
     id: 1,
     title: 'E-commerce Platform',
-    desc: 'This fullstack allows customers to browse and search for products, view product details, add items to their shopping cart, and proceed to checkout. The project includes interactive features such as user authentication, product filtering, and sorting. It employs responsive design to ensure compatibility across various devices.',
+    desc: 'This fullstack project allows customers to browse and search for products, view product details, add items to their shopping cart, and proceed to checkout. The project includes interactive features such as user authentication, product filtering, and sorting..',
     githubURL: 'github.com',
     demoURL: 'https://lorinecakes.netlify.app',
     imageURL:
@@ -73,7 +73,7 @@ export const tabs = [
 type TabId = keyof typeof content
 export const content = {
   about:
-    'Hi, I’m a passionate full-stack developer with strong skills in modern frontend frameworks and backend APIs. I enjoy building clean and scalable systems..',
+    'Hi, I’m a passionate frontend developer with strong skills in modern frontend frameworks and backend APIs. I enjoy building clean and scalable systems..',
   githubURL: 'github.com',
   demoURL: 'github.com',
   imageURL: '/pic.png',
@@ -85,22 +85,22 @@ export const content = {
     },
     {
       name: 'TypeScript',
-      level: 90,
+      level: 75,
       color: 'from-blue-500 to-blue-700',
     },
     {
       name: 'React',
-      level: 92,
+      level: 85,
       color: 'from-blue-400 to-cyan-500',
     },
     {
       name: 'Next.js',
       level: 90,
-      color: 'from-gray-700 to-gray-900',
+      color: 'from-yellow-200 to-yellow-800',
     },
     {
       name: 'HTML5',
-      level: 98,
+      level: 95,
       color: 'from-orange-500 to-red-600',
     },
     {
@@ -108,11 +108,7 @@ export const content = {
       level: 90,
       color: 'from-teal-400 to-teal-600',
     },
-    {
-      name: 'Redux / Zustand / React Query',
-      level: 85,
-      color: 'from-purple-500 to-indigo-600',
-    },
+
     {
       name: 'Git & Version Control',
       level: 88,
@@ -133,16 +129,7 @@ export const content = {
       level: 75,
       color: 'from-indigo-400 to-indigo-600',
     },
-    {
-      name: 'Webpack / Vite / Build Tools',
-      level: 80,
-      color: 'from-gray-500 to-gray-700',
-    },
-    {
-      name: 'Accessibility (a11y)',
-      level: 70,
-      color: 'from-yellow-600 to-yellow-800',
-    },
+
     {
       name: 'GraphQL',
       level: 70,
@@ -314,3 +301,30 @@ export const content = {
     },
   ],
 }
+
+export const testimonials = [
+  {
+    id: 1,
+    name: 'Wunmi. O',
+    role: 'CEO, Cakes & Bakes',
+    photo: 'hs1.jpg',
+    feedback:
+      'Working with Godric was a game changer! His frontend skills elevated our website’s user experience to the next level.',
+  },
+  {
+    id: 2,
+    name: 'Catherine Mead',
+    role: 'Founder, StartupX',
+    photo: 'hs2.jpg',
+    feedback:
+      'Professional, fast, and creative. Godric delivered a stunning and performant website ahead of schedule.',
+  },
+  {
+    id: 3,
+    name: 'Dominic Lyrel',
+    role: 'Marketing Lead, BrightIdeas',
+    photo: '/hs3.jpg',
+    feedback:
+      'I highly recommend Godric for any frontend project. The final product was pixel-perfect and user-friendly.',
+  },
+]

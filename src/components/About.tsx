@@ -10,14 +10,14 @@ const About = () => {
   const [activeTab, setActiveTab] = useState<TabId>('about')
 
   return (
-    <div className='mt-4 px-4 mb-4  py-4 max-w-5xl mx-auto'>
+    <section id='about' className='mt-4 px-4 mb-4  py-4 max-w-5xl mx-auto'>
       {' '}
       <h1 className='font-bold text-[1.6rem] justify-center flex items-center gap-2 text-shade mb-4'>
         <User className='w-7 h-7' /> Get To Know Me
       </h1>
       <p className=' text-[1.1rem] ml-6 mb-6 text-secondary'>
-        Handpicked projects that showcase my approach to design, performance,
-        and user-focused development.
+        Passionate about crafting clean, efficient, and user-friendly web
+        experiences that drive results and delight users.
       </p>
       <div className='flex flex-col md:flex-row gap-4 w-full'>
         {/* Tabs */}
@@ -28,7 +28,7 @@ const About = () => {
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id as TabId)}
-                className={`flex items-center gap-2 px-3 py-2 text-sm rounded border border-shade transition ${
+                className={`flex items-center gap-2 px-3 py-2 text-sm rounded border border-shade hover:bg-shade/50 hover:text-white transition ${
                   activeTab === tab.id
                     ? 'bg-gold text-white border-gold'
                     : 'bg-gray-100 text-gray-700 border-gray-300'
@@ -98,9 +98,9 @@ const About = () => {
                 <h4 className='font-bold'>
                   {exp.title} – {exp.company}
                 </h4>
-                <p className='text-xs italic'>{exp.period}</p>
+                <p className=' italic'>{exp.period}</p>
                 <p>{exp.description}</p>
-                <ul className='list-disc list-inside text-xs text-secondary'>
+                <ul className='list-disc list-inside  text-secondary'>
                   {exp.achievements.map((item, i) => (
                     <li key={i}>{item}</li>
                   ))}
@@ -110,12 +110,12 @@ const About = () => {
           {activeTab === 'education' &&
             content.education.map((edu) => (
               <div key={edu.id} className='mb-6'>
-                <h3 className='text-lg font-semibold'>{edu.institution}</h3>
+                <h3 className=' font-semibold'>{edu.institution}</h3>
                 <p className='italic'>
                   {edu.degree} | {edu.period}
                 </p>
-                <p className='my-2'>{edu.description}</p>
-                <ul className='list-disc list-inside'>
+                <p className='my-2 text-secondary'>{edu.description}</p>
+                <ul className='list-disc list-inside text-secondary'>
                   {edu.achievements.map((achievement, idx) => (
                     <li key={idx}>{achievement}</li>
                   ))}
@@ -140,12 +140,12 @@ const About = () => {
             content.interests.map((interest, idx) => (
               <div key={idx}>
                 <p className='font-medium'>{interest.name}</p>
-                <p className='text-xs text-secondary'>{interest.description}</p>
+                <p className=' text-secondary'>{interest.description}</p>
               </div>
             ))}
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

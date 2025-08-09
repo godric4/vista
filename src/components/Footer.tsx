@@ -3,10 +3,10 @@ import Link from 'next/link'
 
 export default function Footer() {
   return (
-    <footer className='bg-gray-900 text-gray-300 py-10'>
+    <footer className='bg-slate text-gray-300 py-10'>
       <div className='max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center md:items-start gap-8'>
         <div className='flex flex-col space-y-2 max-w-sm text-center md:text-left'>
-          <h2 className='text-2xl font-bold text-white'>Godric Ikeji</h2>
+          <h2 className='text-2xl font-bold text-shade'>Godric Ikeji</h2>
           <p className='text-gray-400'>
             Frontend developer passionate about building modern, accessible, and
             performant web apps.
