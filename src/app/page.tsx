@@ -1,6 +1,3 @@
-'use client'
-
-import { useState, useEffect } from 'react'
 import About from '@/components/About'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
@@ -9,39 +6,25 @@ import Navbar from '@/components/Navbar'
 import Parallax from '@/components/Parallax'
 import Projects from '@/components/Projects'
 import Testimonials from '@/components/Testimonials'
-import PageLoader from '@/components/PageLoader'
+import PageLoaderWrapper from '@/components/PageLoaderWrapper'
 
-const Page = () => {
-  const [loading, setLoading] = useState(true)
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false)
-    }, 3000)
-
-    return () => clearTimeout(timer)
-  }, [])
-
-  if (loading) {
-    return <PageLoader />
-  }
-
+export default function Page() {
   return (
-    <main>
-      <Navbar />
-      <div>
-        <Hero />
-        <About />
-        <Parallax />
-        <div className='mt-4 mb-4 px-6 py-4 max-w-5xl mx-auto'>
-          <Projects />
-          <Contact />
+    <PageLoaderWrapper>
+      <main>
+        <Navbar />
+        <div>
+          <Hero />
+          <About />
+          <Parallax />
+          <div className='mt-4 mb-4 px-4 py-4 max-w-5xl mx-auto'>
+            <Projects />
+            <Contact />
+          </div>
         </div>
-      </div>
-      <Testimonials />
-      <Footer />
-    </main>
+        <Testimonials />
+        <Footer />
+      </main>
+    </PageLoaderWrapper>
   )
 }
-
-export default Page

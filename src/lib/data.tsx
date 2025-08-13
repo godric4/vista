@@ -93,14 +93,14 @@ export const content = [
   },
   {
     type: 'skill',
-    name: 'React',
+    name: 'React/NextJs',
     level: 85,
     color: 'from-blue-400 to-cyan-500',
   },
   {
     type: 'skill',
-    name: 'Next.js',
-    level: 90,
+    name: 'Shopify Development',
+    level: 80,
     color: 'from-yellow-200 to-yellow-800',
   },
   {
@@ -136,13 +136,13 @@ export const content = [
   {
     type: 'skill',
     name: 'Testing (Jest, React Testing Library)',
-    level: 75,
+    level: 70,
     color: 'from-indigo-400 to-indigo-600',
   },
   {
     type: 'skill',
     name: 'GraphQL',
-    level: 70,
+    level: 65,
     color: 'from-pink-500 to-purple-600',
   },
   {
@@ -153,59 +153,59 @@ export const content = [
   },
 
   // Experience section
-  {
-    type: 'experience',
-    id: 1,
-    title: 'Frontend Developer',
-    company: 'Andela Community',
-    period: '2023 - Present',
-    description:
-      'Contributed to open-source projects and collaborated on frontend solutions within a global network of developers.',
-    achievements: [
-      'Implemented responsive UI components that improved user engagement by 25%',
-      'Mentored junior developers during community code reviews',
-      'Organized and led 3 community workshops on React and modern frontend best practices',
-    ],
-  },
+  // {
+  //   type: 'experience',
+  //   id: 1,
+  //   title: 'Frontend Developer',
+  //   company: 'Andela Community',
+  //   period: '2023 - Present',
+  //   description:
+  //     'Contributed to open-source projects and collaborated on frontend solutions within a global network of developers.',
+  //   achievements: [
+  //     'Implemented responsive UI components that improved user engagement by 25%',
+  //     'Mentored junior developers during community code reviews',
+  //     'Organized and led 3 community workshops on React and modern frontend best practices',
+  //   ],
+  // },
   {
     type: 'experience',
     id: 2,
     title: 'Google Africa Developer Scholarship Graduate',
     company: 'Google / Andela',
-    period: '2022 - 2023',
+    period: '2020 - 2021',
     description:
       'Completed an intensive program focusing on full frontend web development using modern JavaScript and React ecosystem.',
     achievements: [
-      'Built and deployed 4 real-world projects including Progressive Web Apps (PWA)',
+      'Built and deployed real-world projects including Progressive Web Apps (PWA)',
       'Achieved top 10% performance in cohort assessments',
-      'Collaborated in a team-based capstone project integrating APIs and frontend state management',
+      'Collaborated in a team-based projects integrating APIs and frontend state management',
     ],
   },
-  {
-    type: 'experience',
-    id: 3,
-    title: 'Fullstack Developer Trainee',
-    company: 'ALX',
-    period: '2021 - 2022',
-    description:
-      'Intensive training covering frontend development, backend APIs, and software engineering best practices.',
-    achievements: [
-      'Developed reusable React components and improved app modularity',
-      'Contributed to Agile sprints and code reviews',
-      'Completed projects on Next.js with API integration and authentication',
-    ],
-  },
+  // {
+  //   type: 'experience',
+  //   id: 3,
+  //   title: 'Fullstack Developer Trainee',
+  //   company: 'ALX',
+  //   period: '2021 - 2022',
+  //   description:
+  //     'Intensive training covering frontend development, backend APIs, and software engineering best practices.',
+  //   achievements: [
+  //     'Developed reusable React components and improved app modularity',
+  //     'Contributed to Agile sprints and code reviews',
+  //     'Completed projects on Next.js with API integration and authentication',
+  //   ],
+  // },
   {
     type: 'experience',
     id: 4,
     title: 'Freelance Frontend Developer',
     company: 'Self-employed',
-    period: '2020 - Present',
+    period: '2023 - Present',
     description:
       'Worked with startups and small businesses to deliver responsive websites and web apps tailored to their needs.',
     achievements: [
-      'Delivered 10+ client projects including e-commerce sites and portfolio websites',
-      'Improved site performance and SEO resulting in 30% increase in traffic for clients',
+      'Delivered 10+ client projects',
+      'Improved site performance and SEO resulting in increase in traffic for clients',
       'Provided ongoing maintenance and UI/UX improvements',
     ],
   },
@@ -213,7 +213,7 @@ export const content = [
     type: 'experience',
     id: 5,
     title: 'Frontend Developer Intern',
-    company: 'Tech Startup XYZ',
+    company: 'Galaxy Computer Institute',
     period: '2019 - 2020',
     description:
       'Assisted in frontend development and QA testing for a SaaS product targeting SMEs.',
@@ -231,27 +231,27 @@ export const content = [
     description:
       'Enjoy playing and analyzing chess games to improve strategic thinking and problem-solving skills.',
   },
-  {
-    type: 'interest',
-    name: 'Open Source Contribution',
-    description:
-      'Active contributor to open source projects, collaborating with developers worldwide.',
-  },
+  // {
+  //   type: 'interest',
+  //   name: 'Open Source Contribution',
+  //   description:
+  //     'Active contributor to open source projects, collaborating with developers worldwide.',
+  // },
   {
     type: 'interest',
     name: 'UI/UX Design',
     description:
       'Passionate about creating intuitive and user-friendly interfaces with attention to detail.',
   },
+  // {
+  //   type: 'interest',
+  //   name: 'Tech Blogging',
+  //   description:
+  //     'Writing articles and tutorials to share knowledge about frontend development and new technologies.',
+  // },
   {
     type: 'interest',
-    name: 'Tech Blogging',
-    description:
-      'Writing articles and tutorials to share knowledge about frontend development and new technologies.',
-  },
-  {
-    type: 'interest',
-    name: 'Learning New Frameworks',
+    name: 'Learning New Tech',
     description:
       'Continuously exploring modern frontend frameworks and libraries to stay updated with industry trends.',
   },
@@ -259,13 +259,7 @@ export const content = [
     type: 'interest',
     name: 'Gaming',
     description:
-      'Enjoy video games and indie games as a way to relax and draw inspiration for interactive design.',
-  },
-  {
-    type: 'interest',
-    name: 'Photography',
-    description:
-      'Interest in photography, focusing on capturing moments and enhancing creativity.',
+      'Enjoy video games  as a way to relax and draw inspiration for interactive design.',
   },
 
   // Education section
@@ -274,13 +268,12 @@ export const content = [
     id: 1,
     institution: 'Caritas University Enugu',
     degree: 'B.Eng. Electrical/Electronics Engineering',
-    period: '2017 - 2022',
+    period: '2012 - 2017',
     description:
       'Completed a comprehensive engineering program focusing on electrical systems, electronics, and circuit design.',
     achievements: [
-      'Graduated with Second Class Upper Division',
       'Final year project on renewable energy systems',
-      'Active member of the Electronics Club',
+      'Active member of the Nigerian Society Of Engineers ',
     ],
   },
   {
@@ -288,29 +281,16 @@ export const content = [
     id: 2,
     institution: 'Google Africa Developer Scholarship (via Andela)',
     degree: 'Fullstack Web Development',
-    period: '2022 - 2023',
+    period: '2020 - 2021',
     description:
-      'Intensive online scholarship program focusing on JavaScript, React, Node.js, and modern web technologies.',
+      'Intensive online scholarship program focusing on JavaScript and modern web technologies.',
     achievements: [
       'Built and deployed multiple real-world projects',
       'Top 10% in cohort assessments',
-      'Collaborated on open source projects within the community',
+      'Collaborated on team projects within the community',
     ],
   },
-  {
-    type: 'education',
-    id: 3,
-    institution: 'ALX',
-    degree: 'Software Engineering Program',
-    period: '2021 - 2022',
-    description:
-      'Hands-on training in frontend and backend development, software engineering principles, and version control.',
-    achievements: [
-      'Completed multiple projects using React, Next.js, and REST APIs',
-      'Participated in Agile development cycles',
-      'Collaborated with peers on team projects',
-    ],
-  },
+
   {
     type: 'education',
     id: 4,
@@ -323,15 +303,15 @@ export const content = [
 export const testimonials = [
   {
     id: 1,
-    name: 'Wunmi. O',
-    role: 'CEO, Cakes & Bakes',
+    name: 'Favor. K',
+    role: 'Lead Physiologist, ErgoSpace',
     photo: '/hs1.jpg',
     feedback:
-      'Great work on the ecommerce platform! The user experience is smooth and the design is very modern. Highly recommend.',
+      'Great work on the website! The user experience is smooth and the design is very modern. Highly recommend.',
   },
   {
     id: 2,
-    name: 'Sue Mayo.',
+    name: 'Wunmi. O.',
     role: 'Tech Lead, Angelmax',
     photo: '/hs2.jpg',
     feedback:

@@ -19,15 +19,16 @@ export default function Footer() {
         </div>
 
         <nav className='flex flex-col md:flex-row gap-6 text-gray-400 text-sm font-medium'>
+          <Link href='#' className='hover:text-indigo-500 transition'>
+            Home
+          </Link>
           <Link href='#about' className='hover:text-indigo-500 transition'>
             About
           </Link>
           <Link href='#projects' className='hover:text-indigo-500 transition'>
             Projects
           </Link>
-          <Link href='#skills' className='hover:text-indigo-500 transition'>
-            Skills
-          </Link>
+
           <Link href='#contact' className='hover:text-indigo-500 transition'>
             Contact
           </Link>
