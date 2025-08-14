@@ -29,7 +29,7 @@ const About = () => {
   })
 
   return (
-    <section id='about' className='mt-4 px-6 mb-4 py-4 max-w-5xl mx-auto'>
+    <section id='about' className='mt-4 px-4 mb-4 py-4 max-w-5xl mx-auto'>
       <h1 className='font-bold text-[1.6rem] justify-center flex items-center gap-2 text-shade mb-4'>
         <User className='w-7 h-7' /> Get To Know Me
       </h1>
