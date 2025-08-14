@@ -30,8 +30,8 @@ export const projects = [
   },
   {
     id: 3,
-    title: 'Crypto Tracker',
-    desc: 'Real-time price tracking app using MEXC API.',
+    title: 'Reading list Tracker',
+    desc: 'Udacity Nanodegree Project.',
     githubURL: 'https://github.com/yourusername/crypto-tracker',
     demoURL: 'https://empire19.netlify.app',
     imageURL:
@@ -41,7 +41,7 @@ export const projects = [
   {
     id: 4,
     title: 'Portfolio Website',
-    desc: 'Modern dark-mode developer portfolio with animation.',
+    desc: 'Modern content-marketer portfolio.',
     githubURL: '#',
     demoURL: 'https://thesylviaomachi.vercel.app',
     imageURL:
