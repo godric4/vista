@@ -42,10 +42,10 @@ export const projects = [
     id: 4,
     title: 'Portfolio Website',
     desc: 'Modern dark-mode developer portfolio with animation.',
-    githubURL: 'https://github.com/yourusername/portfolio-website',
-    demoURL: 'https://yourportfolio.com',
+    githubURL: '#',
+    demoURL: 'https://thesylviaomachi.vercel.app',
     imageURL:
-      'https://res.cloudinary.com/gentlegiant/image/upload/v1740247577/Screenshot_from_2025-02-22_18-57-16_x4t1yr.png',
+      '/sy.png',
     span: 'md:col-span-4',
   },
 ]
