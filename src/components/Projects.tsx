@@ -92,7 +92,7 @@ const Projects = () => {
             )
           })}
         </div>
-        <div className='mt-6 text-center'>
+        {/* <div className='mt-6 text-center'>
           <Link
             href='/projects'
             className=' px-6 py-2 border-shade border-1 rounded-lg text-white font-semibold hover:bg-shade/60 transition flex items-center justify-center md:inline-block '
@@ -105,7 +105,7 @@ const Projects = () => {
               View More Projects
             </p>
           </Link>
-        </div>
+        </div> */}
       </div>
     </section>
   )
