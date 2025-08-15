@@ -22,7 +22,8 @@ export default function Page() {
             <Contact />
           </div>
         </div>
-        <Testimonials />
+         {/* <Testimonials />*/}
+        
         <Footer />
       </main>
     </PageLoaderWrapper>

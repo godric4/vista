@@ -20,6 +20,8 @@ const Navbar = () => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 10)
     }
+
+    handleScroll() //reset initial value in case of user reloading mid page
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])

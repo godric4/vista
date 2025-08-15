@@ -100,7 +100,7 @@ export const content = [
   {
     type: 'skill',
     name: 'Shopify Development',
-    level: 80,
+    level: 65,
     color: 'from-yellow-200 to-yellow-800',
   },
   {
