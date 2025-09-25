@@ -25,7 +25,7 @@ export const projects = [
     githubURL: 'https://github.com/yourusername/bar-lounge-website',
     demoURL: 'https://godrichelounge.netlify.app/',
     imageURL:
-      'https://pixabay.com/photos/hand-manicure-woman-nail-man-3181279/',
+      'https://res.cloudinary.com//image/upload/v1740245537/barlounge_pv64wb.png',
     span: 'md:col-span-2',
   },
   {
@@ -35,7 +35,7 @@ export const projects = [
     githubURL: 'https://github.com/godric4/allure',
     demoURL:'https://allurebyrita.vercel.app/',
     imageURL:
-      'https://res.cloudinary.com/gentlegiant/image/upload/v1691251706/myreads_g5jcjm.png',
+      'https://res.cloudinary.com/gentlegiant/image/upload/v1758780188/Screenshot_20250925-070112_2_begohp.jpg',
     span: 'md:col-span-2 md:row-span-2',
   },
   {
@@ -238,7 +238,8 @@ export const content = [
   },
 ]
 
-
+/*
+// Testimonials (commented out)
 export const testimonials = [
   {
     id: 1,
@@ -265,3 +266,4 @@ export const testimonials = [
       'Pixel-perfect and user-friendly website is what God has done for us. I highly recommend him.',
   },
 ]
+*/
