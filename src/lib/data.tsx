@@ -25,15 +25,15 @@ export const projects = [
     githubURL: 'https://github.com/yourusername/bar-lounge-website',
     demoURL: 'https://godrichelounge.netlify.app/',
     imageURL:
-      'https://res.cloudinary.com/gentlegiant/image/upload/v1740245537/barlounge_pv64wb.png',
-    span: 'md:col-span-2',
+      ,
+https://pixabay.com/photos/hand-manicure-woman-nail-man-3181279/',    span: 'md:col-span-2',
   },
   {
     id: 3,
-    title: 'Reading list Tracker',
-    desc: 'Udacity Nanodegree Project.',
-    githubURL: 'https://github.com/yourusername/crypto-tracker',
-    demoURL: 'https://empire19.netlify.app',
+    title: 'Beauty Parlor',
+    desc: 'A simple beauty parlor website showcasing services, pricing, and booking feature', 
+    githubURL: 'https://github.com/godric4/allure',
+    demoURL:' https://allurebyrita.vercel.app/',
     imageURL:
       'https://res.cloudinary.com/gentlegiant/image/upload/v1691251706/myreads_g5jcjm.png',
     span: 'md:col-span-2 md:row-span-2',
