@@ -238,8 +238,8 @@ export const content = [
   },
 ]
 
-/*
-// Testimonials (commented out)
+
+// Testimonials
 export const testimonials = [
   {
     id: 1,
@@ -266,4 +266,3 @@ export const testimonials = [
       'Pixel-perfect and user-friendly website is what God has done for us. I highly recommend him.',
   },
 ]
-*/
