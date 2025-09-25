@@ -1,16 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import {
-  LaptopMinimalIcon,
-  Locate,
-  MailIcon,
-  MapIcon,
-  MapPinIcon,
-  PhoneCallIcon,
-  Pin,
-  User,
-} from 'lucide-react'
+import { LaptopMinimalIcon, MailIcon, MapPinIcon, PhoneCallIcon, User } from 'lucide-react'
 import { content, tabs } from '@/lib/data'
 import Image from 'next/image'
 
@@ -20,11 +11,11 @@ const About = () => {
   const [activeTab, setActiveTab] = useState<TabId>('about')
 
   const filteredContent = content.filter(({ type }) => {
-    if (activeTab === 'skills') return type === 'skill'
+    if (activeTab === 'about') return type === 'about'
+    if (activeTab === 'skills') return type === 'skills'
     if (activeTab === 'experience') return type === 'experience'
     if (activeTab === 'education') return type === 'education'
     if (activeTab === 'interests') return type === 'interest'
-    if (activeTab === 'about') return type === 'about'
     return false
   })
 
@@ -62,65 +53,50 @@ const About = () => {
         <div className='md:w-[75%] h-80 overflow-y-auto bg-slate p-4 space-y-4'>
           {/* About Tab */}
           {activeTab === 'about' &&
-            filteredContent.map(
-              ({
-                type,
-                imageURL,
-                desc,
-                location,
-                email,
-                phone,
-                availability,
-              }) => (
-                <div
-                  key={type}
-                  className='p-2 flex  flex-col items-center justify-between gap-4'
-                >
-                  <Image
-                    src={imageURL ?? '/default-profile.png'}
-                    alt='me'
-                    width={100}
-                    height={100}
-                    className='rounded-full border-2 border-secondary'
-                  />
-                  <div className='mx-3 mt-2 max-w-xl'>
-                    <p>{desc}</p>
-                    <div className='mt-3  gap-4'>
-                      <div className=' flex flex-col md:flex-row  justify-start gap-4'>
-                        <p className='flex'>
-                          <span className='mr-1 text-shade'>
-                            <MapPinIcon />
-                          </span>
-                          {location}
-                        </p>
-                        <p className='flex'>
-                          <span className='mr-1 text-shade'>
-                            <LaptopMinimalIcon />
-                          </span>
-                          {availability}
-                        </p>
-                      </div>
-                      {/*  */}
-                      <div className=' flex flex-col md:flex-row  justify-start gap-4 mt-4 '>
-                        <p className='flex'>
-                          <span className='mr-1 text-shade'>
-                            <MailIcon />
-                          </span>
-                          {email}
-                        </p>
-
-                        <p className='flex'>
-                          <span className='mr-1 text-shade'>
-                            <PhoneCallIcon />
-                          </span>
-                          {phone}
-                        </p>
-                      </div>
+            filteredContent.map(({ type, imageURL, desc, location, email, phone, availability }) => (
+              <div key={type} className='p-2 flex flex-col items-center justify-between gap-4'>
+                <Image
+                  src={imageURL ?? '/default-profile.png'}
+                  alt='me'
+                  width={100}
+                  height={100}
+                  className='rounded-full border-2 border-secondary'
+                />
+                <div className='mx-3 mt-2 max-w-xl'>
+                  <p>{desc}</p>
+                  <div className='mt-3 gap-4'>
+                    <div className='flex flex-col md:flex-row justify-start gap-4'>
+                      <p className='flex'>
+                        <span className='mr-1 text-shade'>
+                          <MapPinIcon />
+                        </span>
+                        {location}
+                      </p>
+                      <p className='flex'>
+                        <span className='mr-1 text-shade'>
+                          <LaptopMinimalIcon />
+                        </span>
+                        {availability}
+                      </p>
+                    </div>
+                    <div className='flex flex-col md:flex-row justify-start gap-4 mt-4'>
+                      <p className='flex'>
+                        <span className='mr-1 text-shade'>
+                          <MailIcon />
+                        </span>
+                        {email}
+                      </p>
+                      <p className='flex'>
+                        <span className='mr-1 text-shade'>
+                          <PhoneCallIcon />
+                        </span>
+                        {phone}
+                      </p>
                     </div>
                   </div>
                 </div>
-              )
-            )}
+              </div>
+            ))}
 
           {/* Skills Tab */}
           {activeTab === 'skills' &&
@@ -141,50 +117,39 @@ const About = () => {
 
           {/* Experience Tab */}
           {activeTab === 'experience' &&
-            filteredContent.map(
-              ({ id, title, company, period, description, achievements }) => (
-                <div key={id} className='mb-4'>
-                  <h3 className='font-semibold text-lg'>{title}</h3>
-                  <p className='italic text-sm'>
-                    {company} | {period}
-                  </p>
-                  <p className='mt-1'>{description}</p>
-                  <ul className='list-disc ml-5 mt-2 space-y-1'>
-                    {achievements?.map((ach, i) => (
-                      <li key={i}>{ach}</li>
-                    ))}
-                  </ul>
-                </div>
-              )
-            )}
+            filteredContent.map(({ id, title, company, period, description, achievements }) => (
+              <div key={id} className='mb-4'>
+                <h3 className='font-semibold text-lg'>{title}</h3>
+                <p className='italic text-sm'>
+                  {company} | {period}
+                </p>
+                <p className='mt-1'>{description}</p>
+                <ul className='list-disc ml-5 mt-2 space-y-1'>
+                  {achievements?.map((ach, i) => (
+                    <li key={i}>{ach}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
 
           {/* Education Tab */}
           {activeTab === 'education' &&
-            filteredContent.map(
-              ({
-                id,
-                degree,
-                institution,
-                period,
-                description,
-                achievements,
-              }) => (
-                <div key={id} className='mb-4'>
-                  <h3 className='font-semibold text-lg'>{degree}</h3>
-                  <p className='italic text-sm'>
-                    {institution} | {period}
-                  </p>
-                  {description && <p className='mt-1'>{description}</p>}
-                  {achievements && (
-                    <ul className='list-disc ml-5 mt-2 space-y-1'>
-                      {achievements.map((ach, i) => (
-                        <li key={i}>{ach}</li>
-                      ))}
-                    </ul>
-                  )}
-                </div>
-              )
-            )}
+            filteredContent.map(({ id, degree, institution, period, description, achievements }) => (
+              <div key={id} className='mb-4'>
+                <h3 className='font-semibold text-lg'>{degree}</h3>
+                <p className='italic text-sm'>
+                  {institution} | {period}
+                </p>
+                {description && <p className='mt-1'>{description}</p>}
+                {achievements && (
+                  <ul className='list-disc ml-5 mt-2 space-y-1'>
+                    {achievements.map((ach, i) => (
+                      <li key={i}>{ach}</li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            ))}
 
           {/* Interests Tab */}
           {activeTab === 'interests' &&
