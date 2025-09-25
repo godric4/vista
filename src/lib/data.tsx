@@ -1,71 +1,3 @@
-import { User, Briefcase, GraduationCap, Code } from 'lucide-react'
-
-export const navLinks = [
-  { name: 'Home', path: '/' },
-  { name: 'My Projects', path: '/#projects' },
-  { name: 'About Me', path: '/#about' },
-  { name: 'Contact', path: '/#contact' },
-]
-
-export const projects = [
-  {
-    id: 1,
-    title: 'E-commerce Platform',
-    desc: 'This fullstack project allows customers to browse and search for products, view product details, add items to their shopping cart, and proceed to checkout. The project includes interactive features such as user authentication, product filtering, and sorting.',
-    githubURL: 'https://github.com/yourusername/ecommerce-platform',
-    demoURL: 'https://lorinecakes.netlify.app',
-    imageURL:
-      'https://res.cloudinary.com/gentlegiant/image/upload/v1681177403/Screenshot_from_2023-04-11_02-35-28_jrtduw.png',
-    span: 'md:col-span-4',
-  },
-  {
-    id: 2,
-    title: 'Bar & Lounge Website',
-    desc: 'A sleek and modern bar & lounge website designed for an immersive customer experience. Built with a responsive UI, smooth navigation, and engaging visuals to showcase the ambience, menu, and events effortlessly.',
-    githubURL: 'https://github.com/yourusername/bar-lounge-website',
-    demoURL: 'https://godrichelounge.netlify.app/',
-    imageURL:
-      ,
-https://pixabay.com/photos/hand-manicure-woman-nail-man-3181279/',    span: 'md:col-span-2',
-  },
-  {
-    id: 3,
-    title: 'Beauty Parlor',
-    desc: 'A simple beauty parlor website showcasing services, pricing, and booking feature', 
-    githubURL: 'https://github.com/godric4/allure',
-    demoURL:' https://allurebyrita.vercel.app/',
-    imageURL:
-      'https://res.cloudinary.com/gentlegiant/image/upload/v1691251706/myreads_g5jcjm.png',
-    span: 'md:col-span-2 md:row-span-2',
-  },
-  {
-    id: 4,
-    title: 'Portfolio Website',
-    desc: 'Modern content-marketer portfolio.',
-    githubURL: '#',
-    demoURL: 'https://thesylviaomachi.vercel.app',
-    imageURL:
-      '/sy.png',
-    span: 'md:col-span-4',
-  },
-]
-
-export const tabs = [
-  { id: 'about', label: 'About Me', icon: User },
-  { id: 'skills', label: 'Skills', icon: Code },
-  { id: 'experience', label: 'Experience', icon: Briefcase },
-  { id: 'education', label: 'Education', icon: GraduationCap },
-  { id: 'interests', label: 'My Interest', icon: Code }, // changed icon from GraduationCap
-]
-
-// Since content is an array, better define TabId as string union based on your tabs:
-export type TabId =
-  | 'about'
-  | 'skills'
-  | 'experience'
-  | 'education'
-  | 'interests'
-
 export const content = [
   // About section
   {
@@ -152,24 +84,10 @@ export const content = [
     color: 'from-green-500 to-green-700',
   },
 
-  // Experience section
-  // {
-  //   type: 'experience',
-  //   id: 1,
-  //   title: 'Frontend Developer',
-  //   company: 'Andela Community',
-  //   period: '2023 - Present',
-  //   description:
-  //     'Contributed to open-source projects and collaborated on frontend solutions within a global network of developers.',
-  //   achievements: [
-  //     'Implemented responsive UI components that improved user engagement by 25%',
-  //     'Mentored junior developers during community code reviews',
-  //     'Organized and led 3 community workshops on React and modern frontend best practices',
-  //   ],
-  // },
+  // Experience section (IDs renumbered sequentially)
   {
     type: 'experience',
-    id: 2,
+    id: 1,
     title: 'Google Africa Developer Scholarship Graduate',
     company: 'Google / Andela',
     period: '2020 - 2021',
@@ -181,23 +99,9 @@ export const content = [
       'Collaborated in a team-based projects integrating APIs and frontend state management',
     ],
   },
-  // {
-  //   type: 'experience',
-  //   id: 3,
-  //   title: 'Fullstack Developer Trainee',
-  //   company: 'ALX',
-  //   period: '2021 - 2022',
-  //   description:
-  //     'Intensive training covering frontend development, backend APIs, and software engineering best practices.',
-  //   achievements: [
-  //     'Developed reusable React components and improved app modularity',
-  //     'Contributed to Agile sprints and code reviews',
-  //     'Completed projects on Next.js with API integration and authentication',
-  //   ],
-  // },
   {
     type: 'experience',
-    id: 4,
+    id: 2,
     title: 'Freelance Frontend Developer',
     company: 'Self-employed',
     period: '2023 - Present',
@@ -209,20 +113,6 @@ export const content = [
       'Provided ongoing maintenance and UI/UX improvements',
     ],
   },
-  {
-    type: 'experience',
-    id: 5,
-    title: 'Frontend Developer Intern',
-    company: 'Galaxy Computer Institute',
-    period: '2019 - 2020',
-    description:
-      'Assisted in frontend development and QA testing for a SaaS product targeting SMEs.',
-    achievements: [
-      'Enhanced UI components for better accessibility and mobile responsiveness',
-      'Collaborated with backend developers to integrate RESTful APIs',
-      'Participated in sprint planning and retrospectives',
-    ],
-  },
 
   // Interests section
   {
@@ -231,24 +121,12 @@ export const content = [
     description:
       'Enjoy playing and analyzing chess games to improve strategic thinking and problem-solving skills.',
   },
-  // {
-  //   type: 'interest',
-  //   name: 'Open Source Contribution',
-  //   description:
-  //     'Active contributor to open source projects, collaborating with developers worldwide.',
-  // },
   {
     type: 'interest',
     name: 'UI/UX Design',
     description:
       'Passionate about creating intuitive and user-friendly interfaces with attention to detail.',
   },
-  // {
-  //   type: 'interest',
-  //   name: 'Tech Blogging',
-  //   description:
-  //     'Writing articles and tutorials to share knowledge about frontend development and new technologies.',
-  // },
   {
     type: 'interest',
     name: 'Learning New Tech',
@@ -259,7 +137,7 @@ export const content = [
     type: 'interest',
     name: 'Gaming',
     description:
-      'Enjoy video games  as a way to relax and draw inspiration for interactive design.',
+      'Enjoy video games as a way to relax and draw inspiration for interactive design.',
   },
 
   // Education section
@@ -290,39 +168,11 @@ export const content = [
       'Collaborated on team projects within the community',
     ],
   },
-
   {
     type: 'education',
-    id: 4,
+    id: 3,
     institution: 'Udemy',
     degree: 'Various Online Courses',
     period: '2020 - Present',
-  },
-] // <-- closing array bracket for content
-
-export const testimonials = [
-  {
-    id: 1,
-    name: 'Favor. K',
-    role: 'Lead Physiologist, ErgoSpace',
-    photo: '/hs1.jpg',
-    feedback:
-      'Great work on the website! The user experience is smooth and the design is very modern. Highly recommend.',
-  },
-  {
-    id: 2,
-    name: 'Wunmi. O.',
-    role: 'Tech Lead, Angelmax',
-    photo: '/hs2.jpg',
-    feedback:
-      'Godric is a talented developer who is always eager to learn and help the team succeed.',
-  },
-  {
-    id: 3,
-    name: 'Dominic Lyrel.',
-    role: 'Founder, StartupX',
-    photo: '/hs3.jpg',
-    feedback:
-      'Pixel-perfect and user-friendly website is what God has done for us. I highly recommend him.',
   },
 ]
