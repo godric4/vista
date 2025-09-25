@@ -10,81 +10,81 @@ export const content = [
     imageURL: '/pic.png',
   },
 
-  // Skills section
+  // Skills section (type corrected to 'skills')
   {
-    type: 'skill',
+    type: 'skills',
     name: 'JavaScript',
     level: 95,
     color: 'from-yellow-400 to-yellow-600',
   },
   {
-    type: 'skill',
+    type: 'skills',
     name: 'TypeScript',
     level: 75,
     color: 'from-blue-500 to-blue-700',
   },
   {
-    type: 'skill',
+    type: 'skills',
     name: 'React/NextJs',
     level: 85,
     color: 'from-blue-400 to-cyan-500',
   },
   {
-    type: 'skill',
+    type: 'skills',
     name: 'Shopify Development',
     level: 65,
     color: 'from-yellow-200 to-yellow-800',
   },
   {
-    type: 'skill',
+    type: 'skills',
     name: 'HTML5',
     level: 95,
     color: 'from-orange-500 to-red-600',
   },
   {
-    type: 'skill',
+    type: 'skills',
     name: 'CSS3 / Tailwind CSS',
     level: 90,
     color: 'from-teal-400 to-teal-600',
   },
   {
-    type: 'skill',
+    type: 'skills',
     name: 'Git & Version Control',
     level: 88,
     color: 'from-red-500 to-red-700',
   },
   {
-    type: 'skill',
+    type: 'skills',
     name: 'RESTful APIs & Fetch/Axios',
     level: 85,
     color: 'from-green-400 to-green-600',
   },
   {
-    type: 'skill',
+    type: 'skills',
     name: 'Responsive Design & Cross-browser Compatibility',
     level: 90,
     color: 'from-pink-400 to-pink-600',
   },
   {
-    type: 'skill',
+    type: 'skills',
     name: 'Testing (Jest, React Testing Library)',
     level: 70,
     color: 'from-indigo-400 to-indigo-600',
   },
   {
-    type: 'skill',
+    type: 'skills',
     name: 'GraphQL',
     level: 65,
     color: 'from-pink-500 to-purple-600',
   },
   {
-    type: 'skill',
+    type: 'skills',
     name: 'CI/CD Basics',
     level: 65,
     color: 'from-green-500 to-green-700',
   },
 
-  // Experience section (IDs renumbered sequentially)
+  // Experience section
   {
     type: 'experience',
     id: 1,
